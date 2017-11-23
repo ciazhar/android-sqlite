@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.ciazhar.sqlitedatabaseexample.MainActivity"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/main_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SQLite Database Example!"
+        android:gravity="center"
+        />
+    <EditText
+        android:id="@+id/main_input_name"
+        android:layout_below="@+id/main_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter Student Name"
+        />
+    <EditText
+        android:id="@+id/main_input_collage"
+        android:layout_below="@+id/main_input_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter Your Collage Name"
+        />
+    <Button
+        android:id="@+id/main_button_save"
+        android:layout_below="@+id/main_input_collage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:onClick="save"
+        />
+    <Button
+        android:id="@+id/main_button_load"
+        android:layout_below="@+id/main_button_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Load"
+        android:onClick="load"
+        />
+
+</LinearLayout>
